@@ -1,24 +1,29 @@
 // 1)
-// Set a constant yearOfBirth to equal your year of birth.
-
+// Set a variable called 'yearOfBirth' to equal your year of birth.
 
 
 
 ////////////////////////
-console.log(yearOfBirth)
+try {
+    console.log("1." , yearOfBirth)
+} catch (ex) {}
 ////////////////////////
 
 
 
 
 // 2)
-// Add 4 to your birth year and assign it to a new variable called x
+// Add 4 to your birth year and assign it to a new CONSTANT called x
 
 
 
 
 
-console.log(x)
+
+
+try {
+    console.log("2.", x)
+} catch (ex) {}
 ///////////////////
 
 
@@ -30,13 +35,9 @@ console.log(x)
 // make a new variable called isLiamAwesome 
 // and assign it to a boolean value
 
-
-
-
-
-
-console.log(isLiamAwesome);
-
+try {
+    console.log("3.", isLiamAwesome);
+} catch (ex) {}
 
 
 
@@ -48,16 +49,12 @@ console.log(isLiamAwesome);
 // Make two new variables with strings of your
 // choice and concatenate them together
 
+const world = " world!"
+const hello = "hello";
 
+console.log("4.", hello + world);
 
-
-
-
-console.log();
-
-
-// 5) make a new variable called mul and assign it 20 time 10
-
+// 5) make a new variable called mul and assign it 20 times10
 
 
 
@@ -65,6 +62,26 @@ console.log();
 
 
 
-console.log(mul)
+
+try {
+    console.log("5", mul)
+} catch (error) {}
+// 6) Make a new variable called 'collection' of length 5. Fill it with the following:
+
+// > a string,
+// > a boolean,
+// > a negative number
+// > another variable
+// > another array of any length and contents
 
 
+
+
+
+
+
+
+
+try {
+    console.log(collection)
+} catch (error) {}

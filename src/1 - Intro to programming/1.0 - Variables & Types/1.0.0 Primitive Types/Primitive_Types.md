@@ -1,10 +1,24 @@
-# Variables
+# Primitive Types
 
-Variables hold bit of information (data) which we might need to store for use later on.
+## Literals
+
+First, the easiest bit of javascript to understand. It probably wont even look like code.
+
+Literals are exactly what they sound like, they are just literally a value.
+
+`1` is a literal value of type number (more on that in a bit);
+
+`"Liam"` is a literal.
+
+`true` is a literal.
+
+Basically any hard coded value is a literal. We use them a lot but they will become second nature very quickly.
+
+## Variables
+
+Variables are where we start to see a bit of actual programming. They hold bits of information (data) which we might need to store for use later on. When defining a variable you will either be storing a literal value or deducing a value from one or more existing variables.
 
 ## let (=)
-
-First bit of javascript:
 
 ```javascript
 let x = 1;
@@ -136,3 +150,48 @@ console.log(x) // null
 ```
 
 the null is very rarely relevant and most of the time you mean `undefined`.
+
+## Checking types
+
+Javascript is an example of a **dynamically typed** language. Dynamically types means that we can assign whichever type we like to any variable we like. In a statically types language like Java or C# we have to specify the types:
+
+```java
+// This is just an example, you don't need to know any Java.
+
+int myAge = 1; // int (integer) is a number
+
+boolean isAwesome = true;
+
+myAge = false; // THIS ERRORS THE PROGRAM OUT BECAUSE OF BAD TYPES
+```
+
+Typescript moves JS back to statically types (kind of) but more on that much later.
+
+Because of how JS stores variables, we can't tell at run time what the type will be **unless it is a primitive**, otherwise the types will always be an object. This is not very informative most of the time.
+
+As a reminder, primitive types are booleans, numbers, strings, undefined and null.
+
+To find the type, we can use the `typeof` operator. It will always produce a result that is a *string type*.
+
+```javascript
+console.log(typeof "liam"); // 'string'
+console.log(typeof 1); // 'number'
+console.log(typeof undefined); // 'undefined'
+
+console.log(typeof "number"); // What will this return?
+```
+
+Because of the typing system in JS, `typeof` is rarely useful. However if you ever need to know if something is undefined, or you're expecting either a string or an object then it does come in handy.
+
+## Summary
+
+So, we've covered:
+
+* What literal values are.
+* How to create and assign both variables and constants.
+* What the 6 primitive types in javascript are.
+* How to do basic mathematical operations on your variables or literals.
+* String concatenation.
+* Type checking with the `typeof` operator.
+
+
