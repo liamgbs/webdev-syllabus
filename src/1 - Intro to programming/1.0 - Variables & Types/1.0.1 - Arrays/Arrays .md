@@ -145,6 +145,15 @@ In the body of the loop, we are using `i` to access the array without having to 
 We will cover the `for` and `while` loops in a few sections. Bear in mind that in modern JavaScript we rarely write for loops this way. However they are still relevant and at this stage, much easier to understand.
 
 
+We can write this another, more readable way:
 
+```javascript
+const array = ["first", "second", "third"]
 
+for (let i of array) {
+    console.log(i)
+}
+```
+
+There is also a function you can use called array.forEach() which is the proper and modern way to do it. It's a bit more advanced though and we'll leave that until we properly do functions.
 
