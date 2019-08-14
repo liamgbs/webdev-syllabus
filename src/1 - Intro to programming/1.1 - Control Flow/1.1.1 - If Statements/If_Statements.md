@@ -279,6 +279,32 @@ You'll see this form in some places. You're under no obligation to use it but it
 
 Also notice the `break` in there. The break says that we've found the branch we need to go down and to stop checking. Sometimes your data might satisfy two cases but you want one to take priority over the other. So we need the breaks to stop it doing two things.
 
+## Modulo
+
+The modulo operator `%` has absolutely nothing to do with control flow. But it needs mentioning at some point and you'll need it to do the mean question on the excercise.
+
+Just like the division operators will (gasp) perform a divide between two numbers:
+
+```javascript
+    5 / 2 // 2.5
+```
+
+The modulo operator gets the remainder. It's as simple as that:
+
+```javascript
+    5 % 2 // 1
+```
+
+Because 2 goes into 5 with **1** left over. It's used for checking divisibility. A real example would be:
+
+```javascript
+    let seconds = 70;
+
+    let secondsSinceLastMinute = 70 % 60;
+
+    console.log(secondsSinceLastMinute) // 10
+```
+
 ## Summary
 
 So we have if statements on their own:
@@ -348,6 +374,16 @@ And we can use the switch-case:
             // do something unrelated to the others
             break;
     }
+```
+
+And of course, the modulo operator.
+
+```javascript
+    let x = 11;
+
+    let isDivisibleBy10 = x % 10
+
+    console.log(!!isDivisibleBy10) // false
 ```
 
 Done! Thats it for conditional flow.
